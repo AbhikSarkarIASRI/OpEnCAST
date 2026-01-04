@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <style>
+    .text-container {
+      background-color: transparent;
+    }
+    .user-instructions {
+      margin-left: 0;
+      padding-left: 1em;
+    }
+    .logo {
+      display: inline-block;
+      height: 8vw;
+      margin: 1.5vw; /* Add margin to both sides */
+    }
+    .logo-left {
+      float: left;
+    }
+    .logo-right {
+      float: right;
+    }
+    .title {
+      font-size: 6vw;
+      color: #32CD32;
+      margin-top: 10vw;
+      margin-bottom: 4vw; /* Add margin at the bottom of the title */
+    }
+    @media (max-width: 768px) {
+      /* Styles for smaller screens */
+      .logo {
+        height: 15vw;
+        margin: 3vw;
+      }
+      .title {
+        font-size: 8vw;
+        margin-top: 15vw;
+        margin-bottom: 8vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+">
+  <!-- Left Logo -->
+  <img src="LogoL.png" alt="Left Logo" class="logo logo-left" style="width: 150px; height: 150px;">
+
+<div style="
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+">
+  <img src="OpenT.jpg"
+       style="
+         height: 200px;
+         width: 1000px;
+       ">
+</div>
+
+
+  <!-- Right Logo -->
+  <img src="LogoR.png" alt="Right Logo" class="logo logo-right" style="width: 150px; height: 150px;">
+  </div>
+
+
+  <div style="text-align: center;">
+    <img src="Pmeth.jpg" alt="Selective Sweep Image" style="width: 1200px; height: 600px; margin-top: 20px;">
+  </div>
+
+  <div class="text-container" style="margin-top: 20px;">
+    <h3 style="color: #eecb05fe; margin: 0;">Background</h3>
+    <p style="text-align: justify;">DNA methylation is a covalent epigenetic modification involving the enzymatic transfer of a methyl group to specific nucleotides, most commonly cytosine or adenine without altering the primary DNA sequence.The principal forms of DNA methylation include N4-methylcytosine (4mC), 5-methylcytosine (5mC) and N6-methyladenine (6mA), each exhibiting distinct genomic distributions, catalytic pathways, and regulatory functions in cellular processes.</p>
+
+
+    <h3 style="color: #eecb05fe; margin: 0;">About OpEnCAST</h3>
+    <p style="text-align: justify;">"OpEnCAST" is an optimized ensemble based tool for predicting DNA methylation in plants. It detects different kind of DNA methylation signatures (4mC, 5mC, 6mA) from DNA sequences through an ensemble of machine learning algorithms namely Random Forest, Support Vector Machine along with Gradient Boosting and eXtreme Gradient Boosting based on Monocot (<i>Oryza Sp.</i>) and Dicot (<i>Arabidopsis sp.</i>) reference models respectively.</p>
+
+    <h3 style="color: #eecb05fe; margin: 0;">Instructions for Users</h3>
+    <ol class="user-instructions">
+      <li><strong>File Format:</strong> Provide the input file in .fasta (Fasta file format). Please use valid fasta files where each sequence is 41bp long (For further information please look into "Resource Availability" tab).</li>
+      <li><strong>Analysis Guidelines:</strong> After providing input file (Fasta File), User has to specify the reference model of interest among the provided options viz. Monocot (<i>Oryza Sp.</i>) or Dicot (<i>Arabidopsis sp.</i>) or Both References (<i>Oryza Sp.</i> + <i>Arabidopsis sp.</i>) .Then finally select the "Run Analysis" button for predicting DNA methylation.</li>
+    </ol>
+  </div>
+  <div style="height:30px;"></div>
+
+</body>
+</html>
