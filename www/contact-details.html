@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Details</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+         .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contact-cardL {
+    flex: 50 50 50% !important;  /* full width inside flex container */
+    width: 100% !important;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #0e0d0d;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.5);
+    text-align: center;
+}
+
+
+        .contact-cardL:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+        }
+
+        .contact-cardL h2 {
+            color: #f7faf9;
+            margin-bottom: 15px;
+        }
+
+        .contact-cardL p {
+            margin: 6px 0;
+            font-size: 16px;
+            color: #f1ecec;
+        }
+
+        /* Footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #001a12;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer p {
+            color: white;
+            margin: 0;
+        }
+
+    .logo-row {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;   /* 🔥 Ensures equal horizontal spacing */
+    align-items: center;
+    width: 100%;
+ 
+
+    /* 3D depth */
+    box-shadow:
+        0 6px 12px rgba(0,0,0,0.35),
+        0 10px 25px rgba(0,0,0,0.25);
+
+    border-radius: 10px;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.logo-row img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow:
+        0 15px 30px rgba(0,0,0,0.45),
+        0 25px 40px rgba(0,0,0,0.35);
+}
+
+.logo-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2 style="text-align:center; margin-bottom: 30px;">Contact Details</h2>
+
+    <div class="cards-row">
+
+        <!-- Card 1 -->
+        <div class="contact-cardL">
+            <h2>Professor</h2>
+            <p>Discipline of Bioinformatics, The Graduate School</p>
+            <p>ICAR-Indian Agricultural Research Institute</p>
+            <p>Pusa, New Delhi-110012</p>
+            <p><strong>Email:</strong> sarika.iasri@icar.org.in</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="contact-cardL">
+            <h2>Head</h2>
+            <p>Division of Agricultural Bioinformatics</p>
+            <p>ICAR-Indian Agricultural Statistics Research Institute</p>
+            <p>Pusa, New Delhi-110012</p>
+            <p><strong>Email:</strong> hd.cabin@iasri.res.in</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="contact-cardL">
+            <h2>Director, ICAR-IASRI</h2>
+            <p>ICAR-Indian Agricultural Statistics Research Institute</p>
+            <p>Pusa, New Delhi-110012</p>
+            <p><strong>Email:</strong> director@iasri.res.in</p>
+        </div>
+
+    </div>
+    <!-- Logo Row -->
+    <div class="logo-row">
+
+    <div class="logo-box">
+        <a href="https://iasri.res.in/" target="_blank">
+            <img src="IASRI.png" alt="IASRI Logo">
+        </a>
+    </div>
+
+    <div class="logo-box">
+        <a href="https://www.iari.res.in/" target="_blank">
+            <img src="IARI.png" alt="IARI Logo">
+        </a>
+    </div>
+
+    <div class="logo-box">
+        <a href="https://icar.org.in/" target="_blank">
+            <img src="ICAR.png" alt="ICAR Logo">
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
+
