@@ -5,7 +5,7 @@ RUN pip3 install streamlit
 
 RUN R -e "install.packages(c('seqinr','ranger','gbm','e1071','xgboost','ftrCOOL'))"
 
-COPY shiny-app /srv/shiny-server/
+COPY ShinyAPP /srv/shiny-server/
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf
 COPY app.py /app.py
 
